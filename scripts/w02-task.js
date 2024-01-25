@@ -16,7 +16,7 @@ let profilePicture = "images/IMG_1506.jpg";
 const nameElement = document.getElementById('name');
 let foodElement = document.getElementById("food");
 const yearElement = document.querySelectorAll('year');
-
+const imageElement = document.querySelector('img');
 
 
 /* Step 4 - Adding Content */
@@ -30,10 +30,8 @@ imageElement.setAttribute('alt', `${fullName}`);
 
 
 /* Step 5 - Array */
-// Step 1: Declare an array variable to hold your favorite foods
 let favFoods = ["Pizza", "Burger", "Ice Cream", "Sushi"];
 
-// Step 2: Modify the HTML element with the id of "food" to display your favorite foods array
 foodElement.innerHTML = favFoods.join('<br>');
 
 // Step 3: Declare and instantiate a variable to hold another single favorite food item
